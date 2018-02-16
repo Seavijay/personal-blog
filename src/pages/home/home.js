@@ -4,13 +4,16 @@ import MomentList from '../../components/moments/momentList'
 import Sidebar from '../../components/sidebar'
 import React from 'react'
 import './home.css'
+import 'normalize.css'
 
 const Home = () => {
     return (
-        <div className='container'>
+        <div className="container">
             <PublicHeader />
-            <MomentList />
-            <Sidebar />
+            <div class="main" >
+                <MomentList />
+                <Sidebar />
+            </div>
             <PublicFooter />
         </div>
     )

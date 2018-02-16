@@ -1,0 +1,13 @@
+@mixin sidebar($width){
+    display: flex;
+    flex-flow: row wrap;
+    justify-content: flex-start;
+    width: $width;
+}
+
+.sidebar{
+    @include sidebar(30%);
+    @media screen and (max-width:700px){
+        @include sidebar(100%)
+    }
+}

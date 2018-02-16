@@ -7,8 +7,9 @@ import './filter.css'
 const Filters = () => {
     return (
         <div className="filters">
+            <p>FEATURED TAGS</p>
             {
-                FilterTypes.tag|> toPairs|> map(([key, value]) => <Link filter={key}>{value}</Link>)
+                FilterTypes.tag|> toPairs|> map(([key, value]) => <Link filter={value}>{value}</Link>)
             }
         </div>
     )

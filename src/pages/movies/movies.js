@@ -8,7 +8,7 @@ const Movies = () => {
     return (
         <div className='container'>
             <PublicHeader />
-            <MomentList />
+            <MomentList category="Movies"/>
             <PublicFooter />
         </div>
     )

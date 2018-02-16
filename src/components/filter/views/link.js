@@ -23,7 +23,7 @@ Link.propTypes = {
 
 const mapStateToProps = (state, ownProps) => {
     return {
-        active: state.filter === ownProps.filter
+        active: state.filter.tag === ownProps.filter
     }
 }
 

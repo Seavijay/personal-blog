@@ -12,6 +12,7 @@ const PublicFooter = () => {
                 <a href="###"><img src="###" alt="Instagram" /></a>
                 <a href="###"><img src="###" alt="Twitter" /></a>
             </div>
+            <p>Seavijay.gym@gmail.com</p>
             <span>Copyright © Seavijay Blog 2018</span>
         </footer>
     )

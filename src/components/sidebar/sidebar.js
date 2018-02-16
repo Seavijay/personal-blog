@@ -1,11 +1,11 @@
 import {view as Filter} from '../filter'
 import Profile from '../profile/profile.js'
+import 'sidebar.css'
 
 const Sidebar =()=>{
     return(
-        <div class="sidebar">
+        <div className="sidebar">
             <Filter />
-            <Profile />
         </div>
     )
 }
