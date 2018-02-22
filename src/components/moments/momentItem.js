@@ -9,14 +9,18 @@ const MomentItem = ({ information }) => {
             <p className="comment">{information.Comment}</p>
             <div className="pics">
                 {
-                    information.Pics |> toPairs |> map(([key, value]) => {<img src={value} className="pic" />})
+                    information.Pics |> toPairs |> map(([key, value]) => { 
+                        return (<img src={value} alt={`${key}`} className="pic" />)
+                    })
                 }
             </div>
             <div className="picsIntroduction">
                 <h3>{information.Name}</h3>
                 <ul>
                     {
-                        information.PicsIntroduction |> toPairs |> map(([key, value]) => {<li>{`${key}:${value}`}</li>})
+                        information.PicsIntroduction |> toPairs |> map(([key, value]) => {
+                            return (<li>{`${key}:${value}`}</li>)
+                        })
                     }
                 </ul>
             </div>

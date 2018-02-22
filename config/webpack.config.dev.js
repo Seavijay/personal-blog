@@ -42,11 +42,11 @@ module.exports = {
             include: paths.src,
             use: [{ loader: 'babel-loader', options: { ...babelConfig, cacheDirectory: true, } }]
         }, {
-            test: /\.less$/,
+            test: /\.scss$/,
             use: [
                 { loader: 'style-loader' },
                 { loader: 'css-loader' },
-                { loader: 'less-loader' }
+                { loader: 'sass-loader' }
             ]
         }, {
             test: /\.module.css$/,

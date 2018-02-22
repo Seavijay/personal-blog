@@ -1,10 +1,10 @@
 import React from 'react'
-import './profile.css'
+import './profile.scss'
 
 const Profile = () => {
     return (
         <div className="profile">
-            <img src='###' alt='profile picture' />
+            <img src='#' alt='profile picture' />
             <div>
                 <a href="###"><img src="###" alt="微博" /></a>
                 <a href="###"><img src="###" alt="知乎" /></a>

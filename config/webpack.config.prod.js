@@ -39,12 +39,12 @@ module.exports = {
             include: paths.src,
             use: [{ loader: 'babel-loader', options: { ...babelConfig, cacheDirectory: true, } }]
         }, {
-            test: /\.less$/,
+            test: /\.scss$/,
             use: ExtractTextPlugin.extract({
                 fallback: 'style-loader',
                 use: [
                     { loader: 'css-loader' },
-                    { loader: 'less-loader' }
+                    { loader: 'scss-loader' }
                 ]
             })
         }, {

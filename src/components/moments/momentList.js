@@ -4,7 +4,7 @@ import MomentItem from './momentItem'
 import { FilterTypes } from '../../../constants'
 import PropTypes from 'prop-types'
 import {has} from 'ramda'
-import './momentList.css'
+import './momentList.scss'
 
 const MomentList =(moments)=>{
     return(
@@ -29,7 +29,7 @@ MomentList.PropTypes ={
 const selectVisibleMoments = (moments, filter) => {
     const hasFiltertype=has(`${filter.tag}`)
     if(hasFiltertype(FilterTypes.tag)){
-        if(filter.tag=FilterTypes.tag.ALL){
+        if(filter.tag===FilterTypes.tag.ALL){
             return moments
         }else{
             return moments.filter(item=>item.tag===filter.tag)

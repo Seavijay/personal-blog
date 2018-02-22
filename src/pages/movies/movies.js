@@ -2,7 +2,7 @@ import PublicHeader from '../../components/header'
 import PublicFooter from '../../components/footer'
 import MomentList from '../../components/moments/momentList'
 import React from 'react'
-import './movies.css'
+//import './movies.scss'
 
 const Movies = () => {
     return (
