@@ -5,12 +5,13 @@ import {Provider} from 'react-redux'
 import store from './store/store'
 import 'normalize.css'
 
+const root = document.querySelector('#root')
 const render = Component => {
     ReactDOM.render(
         <Provider store={store}>
             <Component />
         </Provider>,
-        document.getElementById('root'),
+        root
     )
 }
 
@@ -18,7 +19,7 @@ render(Route)
 
 
 if (module.hot) {
-    module.hot.accept('./router/rootRouter', () => {
+    module.hot.accept('./routes/rootRouter', () => {
         requestAnimationFrame(render(Route))
     })
 }

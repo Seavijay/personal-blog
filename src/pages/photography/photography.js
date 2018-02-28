@@ -1,5 +1,5 @@
-import PublicHeader from '../../components/header'
-import PublicFooter from '../../components/footer'
+import PublicHeader from '../../components/header/header'
+import PublicFooter from '../../components/footer/footer'
 import MomentList from '../../components/moments/momentList'
 import React from 'react'
 //import './photography.scss'
