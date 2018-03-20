@@ -1,0 +1,17 @@
+:root {
+  --sidebar: {
+    display: flex;
+    flex-flow: row wrap;
+    justify-content: flex-start;
+  }
+}
+
+.sidebar {
+  width: 30%;
+
+  @apply --sidebar;
+
+  @media screen and (width <= 700px) {
+    width: 100%;
+  }
+}

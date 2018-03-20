@@ -53,7 +53,7 @@ module.exports = {
             include: paths.src,
             use: [
                 { loader: 'style-loader' },
-                { loader: 'css-loader', options: { importLoaders: 1, module: true } },
+                { loader: 'css-loader', options: { modules: true, importLoaders: 1 } },
                 { loader: 'postcss-loader', options: postcssConfig }
             ]
         }, {

@@ -1,15 +1,15 @@
 import React from 'react'
 import Link from './link'
 import { FilterTypes } from '../../../constants'
-import { map, toPairs } from 'ramda'
-import './filter.scss'
+import { map, toPairs, compose} from 'ramda'
+import './filter.module.css'
 
 const Filters = () => {
     return (
         <div className="filters">
             <p>FEATURED TAGS</p>
             {
-                FilterTypes.tag|> toPairs|> map(([key, value]) => <Link filter={value}>{value}</Link>)
+                compose(toPairs,map(([key, value]) => <Link filter={value}>{value}</Link>))(FilterTypes.tag)
             }
         </div>
     )

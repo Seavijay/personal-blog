@@ -1,0 +1,57 @@
+:root {
+  --mainColor: white;
+  --hoverColor: rgba(130, 130, 130, 0.6);
+}
+
+header {
+  display: flex;
+  flex-flow: row wrap;
+  justify-content: center;
+  width: 100%;
+  height: 27em;
+  background: url("../../icon/headerbg.jpg") no-repeat;
+
+  & > div {
+    display: flex;
+    flex-flow: row wrap;
+    justify-content: space-between;
+    width: 100%;
+    height: 25%;
+
+    & > .logo {
+      height: 100%;
+      margin-left: 10em;
+      font-weight: bold;
+      color: var(--mainColor);
+
+      &:hover {
+        color: var(--hoverColor);
+      }
+    }
+
+    & > nav {
+      display: flex;
+      flex-flow: row wrap;
+      justify-content: space-around;
+      height: 100%;
+      margin-right: 10em;
+
+      & > .nav-link {
+        color: var(--mainColor);
+
+        &:hover {
+          color: var(--hoverColor);
+        }
+      }
+    }
+  }
+
+  & > h1 {
+    font-weight: bolder;
+    color: var(--mainColor);
+  }
+
+  & > h3 {
+    color: var(--mainColor);
+  }
+}

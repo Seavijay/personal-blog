@@ -1,0 +1,14 @@
+.container {
+  display: flex;
+  flex-flow: row wrap;
+  align-items: center;
+  justify-content: center;
+
+  & .main {
+    width: 75%;
+
+    @media screen and (width <= 700px) {
+      width: 100%;
+    }
+  }
+}

@@ -3,7 +3,7 @@ import PublicFooter from '../../components/footer'
 import MomentList from '../../components/moments/momentList'
 import Sidebar from '../../components/sidebar'
 import React from 'react'
-import './home.scss'
+import './home.module.css'
 import 'normalize.css'
 
 const Home = () => {

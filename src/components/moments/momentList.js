@@ -4,7 +4,7 @@ import MomentItem from './momentItem'
 import { FilterTypes } from '../../../constants'
 import PropTypes from 'prop-types'
 import {has} from 'ramda'
-import './momentList.scss'
+import './momentList.module.css'
 
 const MomentList =(moments)=>{
     return(

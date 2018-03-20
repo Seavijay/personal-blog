@@ -1,0 +1,33 @@
+:root {
+  --hover-theme: {
+    color: DarkCyan;
+    border-color: DarkCyan;
+  };
+
+  --mainColor: rgba(130, 130, 130, 0.6);
+}
+
+.filters {
+  display: flex;
+  flex-flow: row wrap;
+  align-items: center;
+  justify-content: flex-start;
+  width: 100%;
+  border-top: 0.2em solid var(--mainColor);
+
+  & > p {
+    width: 100%;
+    font-weight: bolder;
+    color: var(--mainColor);
+  }
+
+  & > .filter {
+    color: var(--mainColor);
+    border: 0.1em solid var(--mainColor);
+    border-radius: 1em;
+
+    &:hover {
+      @apply --hover-theme;
+    }
+  }
+}

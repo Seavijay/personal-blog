@@ -17,7 +17,7 @@ module.exports = {
     ],
     plugins: [
         '@babel/plugin-proposal-decorators',
-        '@babel/plugin-proposal-proposal-pipeline-operator',
+        '@babel/plugin-proposal-pipeline-operator',
         [
             '@babel/plugin-proposal-class-properties',
             {

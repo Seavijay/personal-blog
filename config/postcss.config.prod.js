@@ -2,6 +2,7 @@ const cssnext = require('postcss-cssnext')
 const nano = require('cssnano')
 
 module.exports = {
+    ident: 'postcss',
     plugins: () => [
         cssnext({
             browsers: [
@@ -19,6 +20,6 @@ module.exports = {
                 'Firefox ESR',
                 'not ie < 9', // React doesn't support IE8 anyway
             ]
-        }),
+        })
     ]
 }

@@ -1,0 +1,67 @@
+:root {
+  --display: {
+    display: flex;
+    flex-flow: row wrap;
+    align-items: center;
+    justify-content: center;
+  };
+
+  --mainColor: rgba(37, 37, 37, 0.815);
+  --introColor: rgba(130, 130, 130, 0.6);
+}
+
+.momentList {
+  width: 70%;
+
+  @apply --display;
+
+  & > .momentItem {
+    width: 100%;
+
+    @apply --display;
+
+    & > p {
+      width: 100%;
+      color: var(--mainColor);
+    }
+
+    & > .pics {
+      display: flex;
+      flex: 0 7 auto;
+      flex-flow: row wrap;
+      align-items: center;
+      justify-content: space-around;
+      margin: 2em;
+
+      & > .pic {
+        flex: 0 1 auto;
+        width: 30%;
+        height: 15em;
+        margin: 2.5%;
+      }
+    }
+
+    & > .picsIntroduction {
+      flex: 0 3 auto;
+
+      @apply --display;
+
+      & > h3 {
+        width: 100%;
+        font-weight: bold;
+        color: var(--mainColor);
+      }
+
+      & > ul {
+        width: 100%;
+
+        @apply --display;
+
+        & > li {
+          width: 100%;
+          color: var(--introColor);
+        }
+      }
+    }
+  }
+}
