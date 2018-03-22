@@ -1,16 +1,18 @@
-import PublicHeader from '../../components/header'
-import PublicFooter from '../../components/footer'
+import PublicHeader from '../../components/header/header'
+import PublicFooter from '../../components/footer/footer'
 import MomentList from '../../components/moments/momentList'
-import Sidebar from '../../components/sidebar'
+import Sidebar from '../../components/sidebar/sidebar'
 import React from 'react'
-//import './bodybuilding.module.css'
+import './bodybuilding.module.css'
 
 const Home = () => {
     return (
-        <div className='container'>
+        <div className="container">
             <PublicHeader />
-            <MomentList />
-            <Sidebar />
+            <div class="main" >
+                <MomentList />
+                <Sidebar />
+            </div>
             <PublicFooter />
         </div>
     )

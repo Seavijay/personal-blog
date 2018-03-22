@@ -1,6 +1,6 @@
 import { view as Filter } from '../filter'
 import React from 'react'
-import 'sidebar.module.css'
+import './sidebar.module.css'
 
 const Sidebar = () => {
     return (

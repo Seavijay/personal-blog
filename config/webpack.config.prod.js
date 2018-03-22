@@ -24,19 +24,19 @@ module.exports = {
         rules: [{
             test: /\.(js|jsx)$/,
             use: [{ loader: 'eslint-loader' }],
-            include: paths.src,
+            include: paths.appSrc,
             enforce: 'pre'
         }, {
             test: /\.json$/,
             use: [{ loader: 'json-loader' }]
         }, {
             test: /-worker\.js$/,
-            include: paths.src,
+            include: paths.appSrc,
             use: [{ loader: 'babel-loader' }, { loader: 'worker-loader' }],
         }, {
             test: /\.(js|jsx)$/,
             exclude: /-worker\.js$/,
-            include: paths.src,
+            include: paths.appSrc,
             use: [{ loader: 'babel-loader', options: { ...babelConfig, cacheDirectory: true, } }]
         }, {
             test: /\.scss$/,
@@ -49,7 +49,7 @@ module.exports = {
             })
         }, {
             test: /\.module.css$/,
-            include: paths.src,
+            include: paths.appSrc,
             use: ExtractTextPlugin.extract({
                 fallback: 'style-loader',
                 use: [

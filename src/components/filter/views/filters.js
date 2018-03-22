@@ -2,7 +2,7 @@ import React from 'react'
 import Link from './link'
 import { FilterTypes } from '../../../constants'
 import { map, toPairs, compose} from 'ramda'
-import './filter.module.css'
+import './filters.module.css'
 
 const Filters = () => {
     return (

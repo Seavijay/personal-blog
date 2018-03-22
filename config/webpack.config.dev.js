@@ -26,7 +26,7 @@ module.exports = {
         rules: [{
             test: /\.(js|jsx)$/,
             use: [{ loader: 'eslint-loader' }],
-            include: paths.src,
+            include: paths.appSrc,
             exclude: /node_modules/,
             enforce: 'pre'
         }, {
@@ -34,12 +34,12 @@ module.exports = {
             use: [{ loader: 'json-loader' }]
         }, {
             test: /-worker\.js$/,
-            include: paths.src,
+            include: paths.appSrc,
             use: [{ loader: 'babel-loader' }, { loader: 'worker-loader' }],
         }, {
             test: /\.(js|jsx)$/,
             exclude: /-worker\.js$/,
-            include: paths.src,
+            include: paths.appSrc,
             use: [{ loader: 'babel-loader', options: { ...babelConfig, cacheDirectory: true, } }]
         }, {
             test: /\.scss$/,
@@ -50,7 +50,7 @@ module.exports = {
             ]
         }, {
             test: /\.module.css$/,
-            include: paths.src,
+            include: paths.appSrc,
             use: [
                 { loader: 'style-loader' },
                 { loader: 'css-loader', options: { modules: true, importLoaders: 1 } },

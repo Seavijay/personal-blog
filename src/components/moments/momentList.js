@@ -1,7 +1,7 @@
 import React from 'react'
 import { connect } from 'react-redux'
 import MomentItem from './momentItem'
-import { FilterTypes } from '../../../constants'
+import { FilterTypes } from '../../constants'
 import PropTypes from 'prop-types'
 import {has} from 'ramda'
 import './momentList.module.css'

@@ -2,11 +2,11 @@ import React, { Component } from 'react'
 import { BrowserRouter, Switch, Route, Redirect } from 'react-router-dom'
 import asyncComponent from '../utils/asyncComponent'
 
-import home from '/pages/home/home'
+import home from '../pages/home/home'
 const code = asyncComponent(() => import('../pages/code/code'))
 const books = asyncComponent(() => import('../pages/books/books'))
 const movies = asyncComponent(() => import('../pages/movies/movies'))
-const musices = asyncComponent(() => import('../pages/musices/musices'))
+const musices = asyncComponent(() => import('../pages/musics/musics'))
 const photography = asyncComponent(() => import('../pages/photography/photography'))
 const bodybuilding = asyncComponent(() => import('../pages/bodybuilding/bodybuilding'))
 
